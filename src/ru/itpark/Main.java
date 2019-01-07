@@ -1,7 +1,7 @@
 package ru.itpark;
 
 import ru.itpark.comparator.SortingByNameComparator;
-import ru.itpark.comparator.SortingPriceComparator;
+import ru.itpark.comparator.SortingByPriceComparator;
 import ru.itpark.domain.Computer;
 import ru.itpark.domain.Product;
 import ru.itpark.domain.Video;
@@ -29,6 +29,6 @@ public class Main {
         findByCategory.sort(new SortingByNameComparator());
         System.out.println(findByCategory);
 
-        System.out.println(service.getAllSorted(new SortingPriceComparator()));
+        System.out.println(service.getAllSorted(new SortingByPriceComparator()));
     }
 }
