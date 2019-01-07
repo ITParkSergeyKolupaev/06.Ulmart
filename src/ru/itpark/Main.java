@@ -21,9 +21,9 @@ public class Main {
         service.add(new Computer(5, "Nexport", "Home", 27_810, "Radeon", "AMD"));
         service.add(new Computer(6, "MXP", "Game", 104_990, "Nvidia", "Intel"));
 
-        List<Product> findByName = service.findAllName("Nike");
-        findByName.sort(new SortingByNameComparator());
-        System.out.println(findByName);
+        List<Product> sortByName = service.findAllName("Nike");
+        sortByName.sort(new SortingByNameComparator());
+        System.out.println(sortByName);
 
         List<Product> findByCategory = service.findByCategory("Home");
         findByCategory.sort(new SortingByNameComparator());
